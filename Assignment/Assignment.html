@@ -1,0 +1,67 @@
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The concat() Method</h2>
+
+<p>The concat() method concatenates (joins) two or more arrays:</p>
+
+<p id="demo"></p>
+
+<script>
+const arr1 = ["Cecilie", "Lone"];
+const arr2 = ["Emil", "Tobias", "Linus"];
+const arr3 = ["Robin"];
+
+const children = arr1.concat(arr2, arr3); 
+document.getElementById("demo").innerHTML = children;
+
+<br/>
+
+const fruit = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruits.copyWithin(2,0);
+
+<br/>
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.fill("Kiwi");
+
+<br/>
+
+const age = [32, 33, 16, 40];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+
+<br/>
+
+const ages = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+
+<br/>
+
+const age1 = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.findIndex(checkAge);
+
+function checkAge(age) {
+  return age > 10;
+}
+
+<br/>
+
+const fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+let index = fruits.indexOf("Apple");
+</script>
+
+</body>
+</html>
