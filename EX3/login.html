@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title> Login page </title>
+
+    <script language="javascript">
+        function validate()
+        {
+            var flag=1;
+            if(document.form.id.value==""||document.form.DOB.value==""||document.form.Gender.value==""||
+			document.form.phno.value==""||document.form.mail.value==""||document.form.count.value==""||
+			document.form.st.value==""||document.form.usid.value==""||document.form.psw.value==""||document.form.Genre.value=="")
+            {
+                flag=0;
+            }
+
+            if(flag==1)
+            {
+                alert("VALID INPUT");
+            }
+            else
+            {
+              alert("INVALID INPUT");
+              document.form.focus();
+
+            }
+        }
+
+    </script>
+
+</head>
+<body> 
+    
+    <style>
+        body {
+    
+          background-image: url('bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+        }
+    </style>  
+    <center> <h1 style="color: aliceblue;"> MUSICAL STORE </h1>  </center> 
+    <center> <h2 style="color: aliceblue;"> LOGIN PAGE </h2>  </center> 
+    <form name="form">
+    
+	<div align="center">
+        <p style="color:aliceblue; font-size: large;">
+        NAME:<input type="text" name="id"><br/><br/>
+        DOB:<input type="date" name="DOB"><br/><br/>
+		
+		<label for="Gender">GENDER:</label>
+
+        <select name="Gender" id="gender">
+        <option value="blank"> </option>
+        <option value="MALE">MALE</option>
+        <option value="FEMALE">FEMALE</option>
+        <option value="OTHERS">OTHERS</option>
+        </select>
+		
+		<br/><br/>
+		
+        PHONE NO:<input type="tel" name="phno" "><br/><br/>
+        EMAIL:<input type="email" name="mail"><br/><br/>
+        COUNTRY:<input type="text" name="count"><br/><br/>
+        STATE:<input type="text" name="st" ><br/><br/>
+        USERID:<input type="text" name="usid"><br/><br/>
+        PASSWORD:<input type="password" placeholder="Enter Password" name="psw"><br/><br/>
+
+        <label for="Genre">Interested Music Genre:</label>
+
+        <select name="Genre" id="genre">
+        <option value="blank"> </option> 
+        <option value="CLASSICAL">CLASSICAL</option>
+        <option value="OPERA">OPERA</option>
+        <option value="POP">POP</option>
+        <option value="JAZZ">JAZZ</option>
+        <option value="ROCK">ROCK</option>
+        <option value="NILL">NILL</option> 
+        
+        </select>
+        </p>
+	
+	<br/><br/>
+	
+    </div>
+    <div align="center">
+        <input type="submit" value="submit" onClick="validate()">
+        <input type="reset"  value="clear" >
+    </div>
+</form>
+</body>
+</html>
