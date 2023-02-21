@@ -1,0 +1,75 @@
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+
+<p id="demo"></p>
+
+<script>
+arr1 = ["Cecilie", "Lone"];
+arr2 = ["Emil", "Tobias", "Linus"];
+arr3 = ["Robin"];
+
+children = arr1.concat(arr2, arr3); 
+document.getElementById("demo").innerHTML = children;
+result = arr1.concat();
+document.write(result);
+</script>
+
+<br/>
+<script>
+ fruit = ["Banana", "Orange", "Apple", "Mango"];
+
+document.getElementById("demo").innerHTML = fruit.copyWithin(2,0);
+result = fruit.copyWithin();
+document.write(result);
+</script>
+<br/>
+<script>
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.fill("Kiwi");
+result = fruits.fill();
+document.write(result);
+</script>
+<br/>
+<script>
+age = [32, 33, 16, 40];
+
+document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+function checkAdult(age) {
+  return age >= 18;
+}
+result = checkAdult(age);
+document.write(result);
+</script>
+<br/>
+<script>
+ages = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.find(checkAge);
+
+function checkAge(age) {
+  return age > 18;
+}
+
+age1 = [3, 10, 18, 20];
+
+document.getElementById("demo").innerHTML = ages.findIndex(checkAge);
+
+function checkAge(age) {
+  return age > 10;
+}
+result = checkAge(age);
+document.write(result);
+</script>
+<br/>
+
+<script>
+fruit1 = ["Banana", "Orange", "Apple", "Mango"];
+result = fruits.indexOf("Apple");
+document.write(result);
+</script>
+
+</body>
+</html>
