@@ -1,0 +1,73 @@
+<html>
+<body>
+
+
+<h1><center>JavaScript Arrays</center></h1>
+
+<h2>The concat() Method</h2>
+<p>The concat() method concatenates (joins) two or more arrays:</p>
+
+<script>
+ arr1 = ["Cecilie", "Lone"];
+ arr2 = ["Emil", "Tobias", "Linus"];
+ arr3 = ["Robin"];
+
+children = arr1.concat(arr2, arr3); 
+document.write(children);
+</script>
+
+<br><br>
+
+<h2>isArray()</h2>
+<p> The isArray() method returns true if an object is an array, otherwise false.</p>
+    <script>
+        arr2 = ["Emil", "Tobias", "Linus"];
+        result =  Array.isArray(arr2);
+        document.write(result);
+    </script>
+<br>
+
+<h2>copyWithin()</h2>
+    <script>
+        arr2 = ["Emil", "Tobias", "Linus"];
+        result =  arr2.copyWithin(2,0);
+        document.write(result);
+    </script>
+
+    <br>
+
+<h2>reverse()</h2>
+<p>The reverse() method reverses the order of the elements in an array.</p>
+    <script>
+        arr2 = ["Emil", "Tobias", "Linus"];
+        result = arr2.reverse();
+        document.write(result);
+    </script>  
+
+<h2>lastIndexOf()</h2>
+<p>The lastIndexOf() method returns the last index (position) of a specified value.</p>
+<script>
+    arr2 = ["Emil", "Tobias", "Linus", "Emil"];
+    result =  arr2.lastIndexOf("Emil");
+    document.write(result);
+</script>
+
+<h2>Fill()</h2>
+<p>The fill() method fills specified elements in an array with a value.</p>
+    <script>
+        arr2 = ["Emil", "Tobias", "Linus"];
+        arr2.fill("john");
+        document.write(arr2);
+    </script>
+
+
+<h2>sort()</h2>
+<p> The sort() sorts the elements of an array.</p>
+    <script>
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        result = fruits.sort();
+        document.write(result);
+    </script>
+
+</body>
+</html>
